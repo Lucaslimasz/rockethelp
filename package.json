@@ -4,8 +4,14 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": {
+      "bundleIdentifier": "com.lucas.helping",
+      "buildNumber": "1.0.0"
+    },
+    "ios": {
+      "bundleIdentifier": "com.lucas.helping",
+      "buildNumber": "1.0.0"
+    },
     "web": "expo start --web"
   },
   "dependencies": {
@@ -14,6 +20,7 @@
     "expo-font": "~10.1.0",
     "expo-splash-screen": "~0.15.1",
     "expo-status-bar": "~1.3.0",
+    "expo-updates": "~0.13.3",
     "native-base": "^3.4.9",
     "phosphor-react-native": "^1.1.2",
     "react": "17.0.2",
