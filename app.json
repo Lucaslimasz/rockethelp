@@ -6,8 +6,16 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
     "android": {
-      "package": "lucas.helping"
+      "googleServicesFile": "./google-services.json",
+      "package": "com.id.lucas.rockethelp"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.id.lucas.rockethelp"
     }
   }
 }
